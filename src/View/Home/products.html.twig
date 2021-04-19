@@ -1,0 +1,19 @@
+{% extends 'layout.html.twig' %}
+
+{% block content %}
+
+<h3> Critères de validation </h3>
+<p> La page affiche bien les 5 produits, à raison de 3 par ligne. </p>
+
+	<div class="container product-list">
+		{% for product in products %}
+			<div class="box-product">{{product}}</div>
+		{% endfor %}
+	</div>
+
+
+	<p>
+		</br></br>Ainsi que le résultat dump() du tableau de produit :
+	</p>
+	{{ dump(products) }}
+{% endblock %}

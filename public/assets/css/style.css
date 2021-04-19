@@ -1,0 +1,8 @@
+.container{
+    width: 80%;
+    display: grid;
+    grid-template-columns: repeat(3, 20%);
+    background-color: rgb(173, 162, 162);
+    border: solid 1px;
+    text-align: center;
+}
